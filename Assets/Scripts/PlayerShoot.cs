@@ -18,8 +18,11 @@ public class PlayerShoot : MonoBehaviour
 
     void ProcessFiring()
     {
-       /*  var emissionModule = laser.GetComponent<ParticleSystem>().emission;
-        emissionModule.enabled = isFiring; */
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isFiring;
+        }
         
     }
 }
