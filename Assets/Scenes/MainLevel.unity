@@ -154,12 +154,22 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -8135692500308144816, guid: 05256004fbaf4a0489511067f14919b9, type: 2}
     value: {fileID: 1501328379}
+  - key: {fileID: 1832411291511096967, guid: 05256004fbaf4a0489511067f14919b9, type: 2}
+    value: {fileID: 1752641830}
   m_ExposedReferences:
     m_References:
+    - 290856a4cb8d15d4f91576216e22a9ac: {fileID: 399144809}
+    - 61972ad3b0f6aaa4c8fc8fef321e0072: {fileID: 399144809}
     - af294586cac3c5943afb26de2014aa5b: {fileID: 368727821}
     - 4f7ea0030febd5243918140ea8e0c1f3: {fileID: 399144809}
+    - f4f3802d02bd6cf4a979f098f1bb5481: {fileID: 399144809}
+    - c9073971a003f8f448d4317ad81052f7: {fileID: 399144809}
+    - 0ebee02c15b5f0343aa5f41765260d4c: {fileID: 399144809}
+    - 41a38522c65401549b1a60342dbf8359: {fileID: 399144809}
     - c2fd8e242bd66b84e9203f9a27013991: {fileID: 723236109}
     - 33ea7f51d06360549aa57ad91070f7e0: {fileID: 399144809}
+    - f0dc8889f9d94a94a8136be974120020: {fileID: 399144809}
+    - 3102b8f2c3b5de84b9da81f8fbc4cb75: {fileID: 399144809}
     - 8cc927a042cbdf84f895c668c8edca88: {fileID: 368727821}
 --- !u!4 &50829963
 Transform:
@@ -1283,6 +1293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752641828}
   - component: {fileID: 1752641829}
+  - component: {fileID: 1752641830}
   m_Layer: 0
   m_Name: Dialogue
   m_TagString: Untagged
@@ -1328,6 +1339,36 @@ MonoBehaviour:
   - 'Kcir: Righteo let''s finish this once and for all. '
   - 'Kcir: Struth!  Looks like the galaxy just got a little more safe.'
   - 'Nehpets: Yeeeehaw!!  You did it! '
+--- !u!114 &1752641830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752641827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: db051e7e1e7223043bfacc53f2a3e3de, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1752641829}
+          m_TargetAssemblyTypeName: DialogueLines, Assembly-CSharp
+          m_MethodName: NextDialogueLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1894822233
 GameObject:
   m_ObjectHideFlags: 0
